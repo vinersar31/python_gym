@@ -32,6 +32,7 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 | [variable_scope.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/variable_scope.ipynb) | Variable Scope & Namespaces | Namespace inspection (`locals()`, `globals()`), LEGB resolution rule, `global` keyword, `nonlocal` keyword for tree/graph DFS helpers, shadowing built-in names, loop vs comprehension scope isolation |
 | [arrays.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/arrays.ipynb) | Arrays & Dynamic Arrays | Static vs dynamic array memory layout, typed `array` module, `sys.getsizeof()` over-allocation, 2D matrix shallow copy trap, Two Pointers, Sliding Window, Prefix Sum, Kadane's Algorithm |
 | [linked_lists.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/linked_lists.ipynb) | Linked Lists | Singly, Doubly, and Circular Linked Lists, pointer mechanics, iterative & recursive reversal, Floyd's Cycle Finding (fast/slow pointers), middle node, merging sorted lists, intersection |
+| [hash_maps.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/hash_maps.ipynb) | Hash Maps & Hash Tables | Hash functions, collision resolution (Separate Chaining vs Open Addressing), custom HashMap with auto-resizing, CPython `dict` compact layout, frequency counter, Two Sum, Group Anagrams, Subarray Sum Equals K, LRU Cache ($O(1)$ Hash Map + Doubly Linked List) |
 
 ---
 
