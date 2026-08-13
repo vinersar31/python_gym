@@ -37,6 +37,7 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 | [queues.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/queues.ipynb) | Queues & Deques | FIFO principle, `list.pop(0)` $O(n)$ anti-pattern, `collections.deque` $O(1)$ mechanics, thread-safe `queue.Queue`, BFS level-order traversal, Sliding Window Max (Monotonic Deque), Circular Queue |
 | [heaps.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/heaps.ipynb) | Heaps & Priority Queues | Min-Heap vs Max-Heap binary tree array indexing, built-in `heapq` module ($O(n)$ `heapify`), custom MinHeap implementation (`sift_up`/`sift_down`), Top-K elements, Merge K Sorted Lists, Dual Heap Stream Median |
 | [binary_search_trees.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/binary_search_trees.ipynb) | Binary Search Trees | BST Invariant ($Left < Root < Right$), custom BST class (`insert`, `search`, 3-case `delete`), DFS (In-Order, Pre-Order, Post-Order) & BFS Level-Order, Validate BST, Lowest Common Ancestor (LCA), Sorted Array to Balanced BST, Kth Smallest Element, Serialization |
+| [recursion.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/recursion.ipynb) | Recursion & Backtracking | Base case & recursive step, call stack frames, Tail Call Optimization (TCO), converting recursion to iterative stack, `@lru_cache` memoization, Divide & Conquer (Merge Sort), Backtracking (Subsets $O(2^n)$, Permutations $O(n!)$, N-Queens), Tree flattening |
 
 ---
 
