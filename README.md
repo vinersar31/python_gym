@@ -33,10 +33,18 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 
 ---
 
-### 🏗️ 3. Upcoming Modules (In Progress)
+### ⚡ 3. Concurrency
+
+| Notebook | Topics Covered | Key Concepts |
+|----------|----------------|--------------|
+| [multiprocessing.ipynb](file:///e:/repositories/python_gym/concurrency/multiprocessing.ipynb) | Multiprocessing | GIL bypass, CPU-bound parallel execution, `Process` API, `ProcessPoolExecutor`, `Pool.map()`, IPC (`Queue`, `Pipe`), Shared Memory (`Value`, `Array`, `Manager`), Locks, start methods (`spawn`, `fork`), CPU benchmark |
+
+---
+
+### 🏗️ 4. Upcoming Modules (In Progress)
 
 - **`object_oriented_programming/`**: Classes, objects, inheritance, polymorphism, encapsulation, dunder/magic methods (`__str__`, `__repr__`, `__len__`, `__getitem__`).
-- **`concurrency/`**: Multithreading (`threading`), multiprocessing (`multiprocessing`), async I/O (`asyncio`).
+- **`concurrency/`**: Multithreading (`threading`), async I/O (`asyncio`).
 - **`fast_api/`**: Asynchronous web APIs, Pydantic data schemas, Uvicorn server integration, OpenAPI documentation.
 - **`package_manager/`**: Virtual environments (`venv`, `conda`), dependency management (`pip`, `poetry`, `uv`).
 
