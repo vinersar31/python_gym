@@ -18,12 +18,13 @@ In Python, **everything is an object** — from primitive integers and strings t
 
 ## 📚 Curriculum & Planned Notebook Roadmap
 
-| # | Planned Notebook | Topic | Key Concepts to be Covered |
-|---|------------------|-------|----------------------------|
-| 1 | `classes_and_objects.ipynb` | Classes & Instance Basics | `class` definition, `self` keyword, `__init__` constructor, instance vs class attributes, `@classmethod`, `@staticmethod` |
-| 2 | `inheritance_and_polymorphism.ipynb` | Inheritance & MRO | Single and Multiple inheritance, `super()` resolution, Method Overriding, Method Resolution Order (C3 Linearization) |
-| 3 | `dunder_methods.ipynb` | Magic (Dunder) Methods | Object representation (`__str__`, `__repr__`), operator overloading (`__add__`, `__eq__`), container emulation (`__len__`, `__getitem__`), callable objects (`__call__`) |
-| 4 | `encapsulation_and_properties.ipynb` | Properties & Encapsulation | Name mangling (`__private`), `@property` getters & setters, descriptors, immutable dataclasses (`@dataclass`) |
+| # | Notebook | Status | Key Concepts Covered |
+|---|----------|--------|----------------------|
+| 1 | [classes_and_objects.ipynb](classes_and_objects.ipynb) | ✅ Complete | `class` definition, `self` reference, `__init__` constructor, instance vs class attributes, `@classmethod`, `@staticmethod`, `__slots__` memory optimization, introspection |
+| 2 | [methods.ipynb](methods.ipynb) | ✅ Complete | Descriptor method binding, fluent method chaining, `@classmethod` polymorphic factory constructors, `@staticmethod`, `@singledispatchmethod` polymorphic dispatch, abstract contracts (`abc.ABC`), method decorators, core dunder methods |
+| 3 | [inheritance_and_polymorphism.ipynb](inheritance_and_polymorphism.ipynb) | ✅ Complete | Single/Multiple inheritance, `super()` proxy mechanics, MRO (C3 Linearization), Cooperative multiple inheritance, Mixin pattern, Duck Typing & `typing.Protocol`, Composition vs. Inheritance |
+| 4 | [encapsulation_and_properties.ipynb](encapsulation_and_properties.ipynb) | ✅ Complete | Access modifiers & name mangling (`__private`), `@property` getters/setters/deleters, custom descriptor protocol (`__get__`, `__set__`, `__set_name__`), `@cached_property`, immutable `@dataclass(frozen=True)` |
+| 5 | `dunder_methods.ipynb` | 📝 Planned | Object representation (`__str__`, `__repr__`), operator overloading (`__add__`, `__eq__`), container emulation (`__len__`, `__getitem__`), callable objects (`__call__`) |
 
 ---
 
