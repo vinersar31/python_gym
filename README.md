@@ -17,6 +17,17 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 | [working_with_strings.ipynb](file:///e:/repositories/python_gym/learn_the_basics/working_with_strings.ipynb) | Working with Strings | String indexing & slicing, string operators, escape sequences, raw strings, f-string formatting, case methods, string search/trim/split/join, UTF-8 bytes |
 | [loops.ipynb](file:///e:/repositories/python_gym/learn_the_basics/loops.ipynb) | Loops — Deep Dive | Iterating over iterables, `range()` internals, `enumerate()`, `zip()`, nested loops, matrix flattening, `itertools` basics, generator performance |
 | [functions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/functions.ipynb) | Functions — Complete Guide | Function definition, default parameters, mutable default trap, `*args`, `**kwargs`, positional/keyword-only markers (`/`, `*`), return tuples, LEGB scope, docstrings, typing hints, lambda, closures, decorators intro, recursion |
+| [lists.ipynb](file:///e:/repositories/python_gym/learn_the_basics/lists.ipynb) | Lists Deep Dive | Dynamic arrays, multi-stride slicing, in-place methods, list comprehensions, memory growth, copying |
+| [tuples.ipynb](file:///e:/repositories/python_gym/learn_the_basics/tuples.ipynb) | Tuples & NamedTuples | Immutability, packing, extended unpacking (`*rest`), struct caching, `NamedTuple` |
+| [sets.ipynb](file:///e:/repositories/python_gym/learn_the_basics/sets.ipynb) | Sets & FrozenSets | Set theory, mathematical operators (`\|`, `&`, `-`, `^`), $O(1)$ lookups, `frozenset` |
+| [dictionaries.ipynb](file:///e:/repositories/python_gym/learn_the_basics/dictionaries.ipynb) | Dictionaries Deep Dive | Hash maps, dict views, merge operators (`\|`, `\|=`), `defaultdict`, `Counter` |
+| [type_casting.ipynb](file:///e:/repositories/python_gym/learn_the_basics/type_casting.ipynb) | Type Casting & Conversions | Implicit vs. explicit conversions, truthiness, numeric bases, dunder conversion protocols |
+| [exceptions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/exceptions.ipynb) | Exception Handling | `try/except/else/finally`, custom exceptions, exception chaining (`raise from`), `ExceptionGroup`, EAFP vs. LBYL |
+| [type_annotations.ipynb](file:///e:/repositories/python_gym/learn_the_basics/type_annotations.ipynb) | Type Annotations | Modern type hints (`int \| str`), Generics, `TypedDict`, `Protocol`, `Callable`, `TypeVar` |
+| [list_comprehensions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/list_comprehensions.ipynb) | List Comprehensions | Syntax anatomy, conditional filtering, if-else ternary, matrix flattening/transposition, dict/set comprehensions, walrus operator `:=`, bytecode benchmarks |
+| [generator_expressions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/generator_expressions.ipynb) | Generator Expressions | Lazy on-demand evaluation, $O(1)$ constant memory profiling, stream pipelines, built-in aggregator integration, one-time consumption rule |
+| [programming_paradigms.ipynb](file:///e:/repositories/python_gym/learn_the_basics/programming_paradigms.ipynb) | Programming Paradigms | Multi-paradigm architecture, Procedural, Functional (pure functions, immutability, `reduce`), OOP (encapsulation, polymorphism), Declarative (`match/case`), comparative solutions |
+| [context_managers.ipynb](file:///e:/repositories/python_gym/learn_the_basics/context_managers.ipynb) | Context Managers | `with` statement, `__enter__`/`__exit__` protocol, exception suppression, `@contextmanager`, `contextlib` tools (`suppress`, `redirect_stdout`, `ExitStack`), `async with`, atomic transactions |
 
 ---
 
@@ -53,12 +64,31 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 
 ---
 
-### 🏗️ 4. Upcoming Modules (In Progress)
+### 🧱 4. Object-Oriented Programming (`object_oriented_programming/`)
 
-- **`object_oriented_programming/`**: Classes, objects, inheritance, polymorphism, encapsulation, dunder/magic methods (`__str__`, `__repr__`, `__len__`, `__getitem__`).
-- **`concurrency/`**: Multithreading (`threading`), async I/O (`asyncio`).
+| Notebook | Topics Covered | Key Concepts |
+|----------|----------------|--------------|
+| [classes_and_objects.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/classes_and_objects.ipynb) | Classes & Objects | Class blueprints, instantiation, `self` reference, `__init__` constructor, instance vs class attributes, mutable class attribute trap, `@classmethod`, `@staticmethod`, `__slots__` memory optimization, object lifecycle (`__new__`, `__init__`, `__del__`), dynamic attributes & runtime introspection |
+| [methods.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/methods.ipynb) | Methods & Patterns | Method descriptor binding protocol (`__func__`, `__self__`), fluent method chaining, `@classmethod` polymorphic factory constructors, `@staticmethod`, `@singledispatchmethod` polymorphic dispatch, abstract contracts (`abc.ABC`), method decorators, core dunder methods |
+| [inheritance_and_polymorphism.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/inheritance_and_polymorphism.ipynb) | Inheritance & Polymorphism | Single/Multiple inheritance, `super()` proxy mechanics, MRO (C3 Linearization), Cooperative multiple inheritance, Mixin architectural pattern, Duck Typing, `typing.Protocol` structural subtyping, Composition vs. Inheritance |
+| [encapsulation_and_properties.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/encapsulation_and_properties.ipynb) | Encapsulation & Properties | Access modifiers & name mangling (`__private`), `@property` getters/setters/deleters, custom descriptor protocol (`__get__`, `__set__`, `__set_name__`), `@cached_property`, immutable `@dataclass(frozen=True)` |
+
+---
+
+### 📦 5. Package Management & Environments (`package_manager/`)
+
+| Notebook | Topics Covered | Key Concepts |
+|----------|----------------|--------------|
+| [common_packages_and_modules.ipynb](file:///e:/repositories/python_gym/package_manager/common_packages_and_modules.ipynb) | Packages & Modules Foundations | Module vs package structure, `sys.path`, `importlib`, standard library essentials (`pathlib`, `json`, `collections`), third-party ecosystem, `__all__` |
+| [pip_and_requirements.ipynb](file:///e:/repositories/python_gym/package_manager/pip_and_requirements.ipynb) | Dependency Management with Pip | `pip install`, `pip freeze`, requirements.txt structure, SemVer operators (`==`, `>=`, `~=`), wheels (`.whl`) vs sdist, SHA-256 hash security, private registries, programmatic `importlib.metadata` |
+| [uv_fast_packaging.ipynb](file:///e:/repositories/python_gym/package_manager/uv_fast_packaging.ipynb) | Next-Gen Tooling with `uv` | Rust PubGrub resolver, `uv pip`, `uv venv`, `uv python`, `uv init`/`add`/`run`, PEP 723 single-file scripts, `uvx` ephemeral execution |
+
+---
+
+### 🏗️ 6. Upcoming Modules (In Progress)
+
+- **`package_manager/`**: `virtual_environments.ipynb`, `poetry_management.ipynb`.
 - **`fast_api/`**: Asynchronous web APIs, Pydantic data schemas, Uvicorn server integration, OpenAPI documentation.
-- **`package_manager/`**: Virtual environments (`venv`, `conda`), dependency management (`pip`, `poetry`, `uv`).
 
 ---
 

@@ -18,12 +18,13 @@ Managing Python environments and dependencies cleanly prevents conflicting packa
 
 ## 📚 Curriculum & Planned Notebook Roadmap
 
-| # | Planned Notebook | Topic | Key Concepts to be Covered |
-|---|------------------|-------|----------------------------|
-| 1 | `virtual_environments.ipynb` | Virtual Environment Isolation | Creating and activating `venv`, system vs environment site-packages, environment activation scripts, `conda` environment management |
-| 2 | `pip_and_requirements.ipynb` | Dependency Management with Pip | `pip install`, `pip freeze`, pinned dependencies, Semantic Versioning (`==`, `>=`, `~=`), wheels (`.whl`) vs source distributions (`sdist`) |
-| 3 | `poetry_management.ipynb` | Modern Packaging with Poetry | `pyproject.toml` configuration, dependency resolution locking (`poetry.lock`), managing dev dependencies, building and publishing packages |
-| 4 | `uv_fast_packaging.ipynb` | Next-Gen Ultra-Fast Tooling (`uv`) | `uv pip`, `uv venv`, high-speed Rust dependency resolution, workspace management, replacing legacy `pip-tools` |
+| # | Notebook | Topic | Key Concepts Covered | Status |
+|---|----------|-------|----------------------|--------|
+| 1 | [common_packages_and_modules.ipynb](common_packages_and_modules.ipynb) | Packages & Modules Foundations | Module vs package structure, `sys.path`, `importlib`, standard library ("Batteries Included"), PyPI ecosystem, `__all__` |  Completed |
+| 2 | `virtual_environments.ipynb` | Virtual Environment Isolation | Creating and activating `venv`, system vs environment site-packages, activation scripts, `conda` | 📝 Planned |
+| 3 | [pip_and_requirements.ipynb](pip_and_requirements.ipynb) | Dependency Management with Pip | `pip install`, `pip freeze`, pinned requirements, SemVer (`==`, `>=`, `~=`), wheels vs sdist, hash security |  Completed |
+| 4 | `poetry_management.ipynb` | Modern Packaging with Poetry | `pyproject.toml` configuration, `poetry.lock`, managing dev dependencies, publishing | 📝 Planned |
+| 5 | [uv_fast_packaging.ipynb](uv_fast_packaging.ipynb) | Next-Gen Ultra-Fast Tooling (`uv`) | Rust PubGrub resolver, `uv pip`, `uv venv`, `uv python`, `uv init`/`add`/`run`, PEP 723 single-file scripts, `uvx` |  Completed |
 
 ---
 
