@@ -1,94 +1,101 @@
 # Python Gym 🐍🏋️‍♂️
 
-Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter notebooks designed for hands-on learning, mastering Python fundamentals, data structures, algorithms, concurrency, and modern Python application development.
+Welcome to **Python Gym**, an all-in-one software engineering and technical interview preparation command center.
+
+This repository is organized into **4 core pillars** covering everything from CPython fundamentals to distributed system architectures, backed by an interactive CLI runner (`gym.py`).
 
 ---
 
-## 📚 Curriculum & Notebook Map
+## 🏛️ The 4 Repository Pillars
 
-### 📖 1. Learn the Basics (`learn_the_basics/`)
-
-| Notebook | Topics Covered | Key Concepts |
-|----------|----------------|--------------|
-| [basic_syntax.ipynb](file:///e:/repositories/python_gym/learn_the_basics/basic_syntax.ipynb) | Basic Syntax & Structure | Statements, line continuation, indentation rules, comments, `print()`, `input()`, built-in keywords |
-| [variables_and_data_types.ipynb](file:///e:/repositories/python_gym/learn_the_basics/variables_and_data_types.ipynb) | Variables & Data Types | Dynamic typing, object references, `int`, `float`, `complex`, `bool`, `str`, `list`, `tuple`, `dict`, `set`, `type()`, `isinstance()`, type casting |
-| [operators.ipynb](file:///e:/repositories/python_gym/learn_the_basics/operators.ipynb) | Operators | Arithmetic, comparison, assignment, logical, bitwise, membership (`in`), identity (`is`), operator precedence, walrus operator `:=` |
-| [control_flow.ipynb](file:///e:/repositories/python_gym/learn_the_basics/control_flow.ipynb) | Control Flow | `if / elif / else`, ternary expressions, `match / case` (Python 3.10+), `for` loops, `while` loops, `break`, `continue`, `pass`, loop `else` clause |
-| [working_with_strings.ipynb](file:///e:/repositories/python_gym/learn_the_basics/working_with_strings.ipynb) | Working with Strings | String indexing & slicing, string operators, escape sequences, raw strings, f-string formatting, case methods, string search/trim/split/join, UTF-8 bytes |
-| [loops.ipynb](file:///e:/repositories/python_gym/learn_the_basics/loops.ipynb) | Loops — Deep Dive | Iterating over iterables, `range()` internals, `enumerate()`, `zip()`, nested loops, matrix flattening, `itertools` basics, generator performance |
-| [functions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/functions.ipynb) | Functions — Complete Guide | Function definition, default parameters, mutable default trap, `*args`, `**kwargs`, positional/keyword-only markers (`/`, `*`), return tuples, LEGB scope, docstrings, typing hints, lambda, closures, decorators intro, recursion |
-| [lists.ipynb](file:///e:/repositories/python_gym/learn_the_basics/lists.ipynb) | Lists Deep Dive | Dynamic arrays, multi-stride slicing, in-place methods, list comprehensions, memory growth, copying |
-| [tuples.ipynb](file:///e:/repositories/python_gym/learn_the_basics/tuples.ipynb) | Tuples & NamedTuples | Immutability, packing, extended unpacking (`*rest`), struct caching, `NamedTuple` |
-| [sets.ipynb](file:///e:/repositories/python_gym/learn_the_basics/sets.ipynb) | Sets & FrozenSets | Set theory, mathematical operators (`\|`, `&`, `-`, `^`), $O(1)$ lookups, `frozenset` |
-| [dictionaries.ipynb](file:///e:/repositories/python_gym/learn_the_basics/dictionaries.ipynb) | Dictionaries Deep Dive | Hash maps, dict views, merge operators (`\|`, `\|=`), `defaultdict`, `Counter` |
-| [type_casting.ipynb](file:///e:/repositories/python_gym/learn_the_basics/type_casting.ipynb) | Type Casting & Conversions | Implicit vs. explicit conversions, truthiness, numeric bases, dunder conversion protocols |
-| [exceptions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/exceptions.ipynb) | Exception Handling | `try/except/else/finally`, custom exceptions, exception chaining (`raise from`), `ExceptionGroup`, EAFP vs. LBYL |
-| [type_annotations.ipynb](file:///e:/repositories/python_gym/learn_the_basics/type_annotations.ipynb) | Type Annotations | Modern type hints (`int \| str`), Generics, `TypedDict`, `Protocol`, `Callable`, `TypeVar` |
-| [list_comprehensions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/list_comprehensions.ipynb) | List Comprehensions | Syntax anatomy, conditional filtering, if-else ternary, matrix flattening/transposition, dict/set comprehensions, walrus operator `:=`, bytecode benchmarks |
-| [generator_expressions.ipynb](file:///e:/repositories/python_gym/learn_the_basics/generator_expressions.ipynb) | Generator Expressions | Lazy on-demand evaluation, $O(1)$ constant memory profiling, stream pipelines, built-in aggregator integration, one-time consumption rule |
-| [programming_paradigms.ipynb](file:///e:/repositories/python_gym/learn_the_basics/programming_paradigms.ipynb) | Programming Paradigms | Multi-paradigm architecture, Procedural, Functional (pure functions, immutability, `reduce`), OOP (encapsulation, polymorphism), Declarative (`match/case`), comparative solutions |
-| [context_managers.ipynb](file:///e:/repositories/python_gym/learn_the_basics/context_managers.ipynb) | Context Managers | `with` statement, `__enter__`/`__exit__` protocol, exception suppression, `@contextmanager`, `contextlib` tools (`suppress`, `redirect_stdout`, `ExitStack`), `async with`, atomic transactions |
-
----
-
-### ⚡ 2. Data Structures & Algorithms (`data_structures_and_algorithms/`)
-
-| Notebook | Topics Covered | Key Concepts |
-|----------|----------------|--------------|
-| [modules.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/modules.ipynb) | Modules & Packages | Creating `.py` modules, import variants, `sys.path`, executable scripts (`if __name__ == '__main__'`), `importlib.reload()`, standard library overview, package creation with `__init__.py`, `__all__` export control |
-| [lambdas.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/lambdas.ipynb) | Lambda Functions | Anonymous functions, syntax, key functions in sorting/searching (`sorted()`, `min()`, `max()`), `map()`, `filter()`, `reduce()`, ternary logic, closure binding trap, bytecode analysis |
-| [decorators.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/decorators.ipynb) | Decorators & Profiling | First-class functions, wrapper functions, preserving metadata with `@functools.wraps`, `@timeit` benchmark, `@count_calls`, `@memoize` for Dynamic Programming, decorator factories, stacked decorators, class-based decorators |
-| [iterators.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/iterators.ipynb) | Iterators & Generators | Iterator Protocol (`__iter__`, `__next__`), manual `for` loop simulation, custom iterator classes, Linked List iteration, `yield` generator functions, coroutine `.send()`, `itertools` module, $O(1)$ memory benchmarking |
-| [regular_expressions.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/regular_expressions.ipynb) | Regular Expressions (Regex) | `re` module, search functions (`search`, `match`, `findall`, `finditer`), metacharacters, quantifiers (greedy vs lazy), named capture groups, zero-width lookaround assertions, PII masking, lexical analyzer tokenizer |
-| [variable_scope.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/variable_scope.ipynb) | Variable Scope & Namespaces | Namespace inspection (`locals()`, `globals()`), LEGB resolution rule, `global` keyword, `nonlocal` keyword for tree/graph DFS helpers, shadowing built-in names, loop vs comprehension scope isolation |
-| [arrays.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/arrays.ipynb) | Arrays & Dynamic Arrays | Static vs dynamic array memory layout, typed `array` module, `sys.getsizeof()` over-allocation, 2D matrix shallow copy trap, Two Pointers, Sliding Window, Prefix Sum, Kadane's Algorithm |
-| [linked_lists.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/linked_lists.ipynb) | Linked Lists | Singly, Doubly, and Circular Linked Lists, pointer mechanics, iterative & recursive reversal, Floyd's Cycle Finding (fast/slow pointers), middle node, merging sorted lists, intersection |
-| [hash_maps.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/hash_maps.ipynb) | Hash Maps & Hash Tables | Hash functions, collision resolution (Separate Chaining vs Open Addressing), custom HashMap with auto-resizing, CPython `dict` compact layout, frequency counter, Two Sum, Group Anagrams, Subarray Sum Equals K, LRU Cache ($O(1)$ Hash Map + Doubly Linked List) |
-| [stacks.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/stacks.ipynb) | Stacks | LIFO principle, `collections.deque` vs `list` performance, custom Stack class, call stack overhead, Balanced Parentheses, Monotonic Stack (Next Greater Element), RPN Evaluator, Min Stack ($O(1)$ Min) |
-| [queues.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/queues.ipynb) | Queues & Deques | FIFO principle, `list.pop(0)` $O(n)$ anti-pattern, `collections.deque` $O(1)$ mechanics, thread-safe `queue.Queue`, BFS level-order traversal, Sliding Window Max (Monotonic Deque), Circular Queue |
-| [heaps.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/heaps.ipynb) | Heaps & Priority Queues | Min-Heap vs Max-Heap binary tree array indexing, built-in `heapq` module ($O(n)$ `heapify`), custom MinHeap implementation (`sift_up`/`sift_down`), Top-K elements, Merge K Sorted Lists, Dual Heap Stream Median |
-| [binary_search_trees.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/binary_search_trees.ipynb) | Binary Search Trees | BST Invariant ($Left < Root < Right$), custom BST class (`insert`, `search`, 3-case `delete`), DFS (In-Order, Pre-Order, Post-Order) & BFS Level-Order, Validate BST, Lowest Common Ancestor (LCA), Sorted Array to Balanced BST, Kth Smallest Element, Serialization |
-| [recursion.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/recursion.ipynb) | Recursion & Backtracking | Base case & recursive step, call stack frames, Tail Call Optimization (TCO), converting recursion to iterative stack, `@lru_cache` memoization, Divide & Conquer (Merge Sort), Backtracking (Subsets $O(2^n)$, Permutations $O(n!)$, N-Queens), Tree flattening |
-| [sorting_algorithms.ipynb](file:///e:/repositories/python_gym/data_structures_and_algorithms/sorting_algorithms.ipynb) | Sorting Algorithms | Stability, in-place vs out-of-place, Bubble Sort, Selection Sort, Insertion Sort, Merge Sort ($O(n \log n)$), Quick Sort (partitioning), Heap Sort, Counting Sort ($O(n+k)$), CPython Timsort internals, empirical benchmarks |
+```
+python_gym/
+├── gym.py                                 # ⚡ Interactive CLI (test runner, daily challenges, stats)
+├── theory/                                # 📖 1. Core Python & Computer Science Theory
+│   ├── learn_the_basics/                  # 18 notebooks: syntax, data types, control flow, typing
+│   ├── data_structures_and_algorithms/    # 15 notebooks: memory layout, trees, heaps, DP, sorting
+│   ├── concurrency/                       # Threading, multiprocessing, asyncio, GIL mechanics
+│   ├── object_oriented_programming/       # MRO, descriptors, encapsulation, dataclasses
+│   ├── package_manager/                   # Pip, requirements, modern uv packaging
+│   └── fast_api/                          # Asynchronous web APIs, Pydantic data schemas
+├── exercises/                             # 🧠 2. Algorithmic Coding Challenges & Test Suites
+│   ├── leetcode/                          # Pattern-based Blind 75 / NeetCode 150 tracks
+│   ├── hackerrank/                        # Problem Solving & Interview Preparation Kit tracks
+│   └── utils/                             # Shared ListNode, TreeNode & serializer helpers
+├── design_patterns/                       # 🧩 3. Gang of Four (GoF) & Pythonic Design Patterns
+│   ├── 01_creational/                     # Factory Method, Abstract Factory, Builder, Prototype, Singleton
+│   ├── 02_structural/                     # Adapter, Composite, Decorator, Facade, Proxy
+│   └── 03_behavioral/                     # Chain of Responsibility, Command, Observer, State, Strategy
+└── system_design/                         # 📐 4. Distributed Systems & System Design
+    ├── 01_fundamentals/                   # Scalability, CAP theorem, Sharding, Caching, MQs, Estimations
+    ├── 02_low_level_design_lld/           # Runnable Python OOP (LRU/LFU cache, Rate limiter, Parking lot, KV store)
+    ├── 03_high_level_design_hld/          # End-to-end case studies (TinyURL, WhatsApp, Twitter, YouTube, Uber, Flash Sale)
+    └── 04_interview_framework/            # 45-minute structured interview blueprint
+```
 
 ---
 
-### 🚀 3. Concurrency (`concurrency/`)
+## ⚡ Interactive Gym CLI (`gym.py`)
 
-| Notebook | Topics Covered | Key Concepts |
-|----------|----------------|--------------|
-| [multiprocessing.ipynb](file:///e:/repositories/python_gym/concurrency/multiprocessing.ipynb) | Multiprocessing | GIL bypass, CPU-bound parallel execution, `Process` API, `ProcessPoolExecutor`, `Pool.map()`, IPC (`Queue`, `Pipe`), Shared Memory (`Value`, `Array`, `Manager`), Locks, start methods (`spawn`, `fork`), CPU benchmark |
-| [asynchrony.ipynb](file:///e:/repositories/python_gym/concurrency/asynchrony.ipynb) | Asynchronous Programming | Non-blocking I/O with `asyncio`, `async`/`await` syntax, Event Loop mechanics, task scheduling (`create_task`), `gather()`, `as_completed()`, `wait_for()` timeouts, `async with`, `Semaphore`, `to_thread()` |
-| [gil.ipynb](file:///e:/repositories/python_gym/concurrency/gil.ipynb) | Global Interpreter Lock (GIL) | What is the GIL, CPython reference counting (`sys.getrefcount`), `sys.getswitchinterval()`, CPU-bound vs I/O-bound multithreading impact, bypassing GIL via `multiprocessing` / NumPy, free-threaded Python 3.13+ (PEP 703) |
-| [threading.ipynb](file:///e:/repositories/python_gym/concurrency/threading.ipynb) | Multithreading | Single-process shared memory threads, daemon threads, `ThreadPoolExecutor`, Race Conditions, `threading.Lock`, `RLock`, `Semaphore`, `Event`, thread-safe `queue.Queue`, `threading.local()`, I/O vs CPU benchmarks |
+Python Gym includes a built-in terminal CLI to streamline interview preparation:
 
----
+```bash
+# 🧪 Run all automated test suites (Exercises + Design Patterns + LLD)
+python gym.py test
 
-### 🧱 4. Object-Oriented Programming (`object_oriented_programming/`)
+# 🎯 Target specific tracks
+python gym.py test leetcode
+python gym.py test hackerrank
+python gym.py test patterns
+python gym.py test lld
 
-| Notebook | Topics Covered | Key Concepts |
-|----------|----------------|--------------|
-| [classes_and_objects.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/classes_and_objects.ipynb) | Classes & Objects | Class blueprints, instantiation, `self` reference, `__init__` constructor, instance vs class attributes, mutable class attribute trap, `@classmethod`, `@staticmethod`, `__slots__` memory optimization, object lifecycle (`__new__`, `__init__`, `__del__`), dynamic attributes & runtime introspection |
-| [methods.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/methods.ipynb) | Methods & Patterns | Method descriptor binding protocol (`__func__`, `__self__`), fluent method chaining, `@classmethod` polymorphic factory constructors, `@staticmethod`, `@singledispatchmethod` polymorphic dispatch, abstract contracts (`abc.ABC`), method decorators, core dunder methods |
-| [inheritance_and_polymorphism.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/inheritance_and_polymorphism.ipynb) | Inheritance & Polymorphism | Single/Multiple inheritance, `super()` proxy mechanics, MRO (C3 Linearization), Cooperative multiple inheritance, Mixin architectural pattern, Duck Typing, `typing.Protocol` structural subtyping, Composition vs. Inheritance |
-| [encapsulation_and_properties.ipynb](file:///e:/repositories/python_gym/object_oriented_programming/encapsulation_and_properties.ipynb) | Encapsulation & Properties | Access modifiers & name mangling (`__private`), `@property` getters/setters/deleters, custom descriptor protocol (`__get__`, `__set__`, `__set_name__`), `@cached_property`, immutable `@dataclass(frozen=True)` |
+# 🎲 Pick a random daily interview challenge with a single command
+python gym.py daily
 
----
+# 📊 View full curriculum inventory and statistics
+python gym.py stats
 
-### 📦 5. Package Management & Environments (`package_manager/`)
-
-| Notebook | Topics Covered | Key Concepts |
-|----------|----------------|--------------|
-| [common_packages_and_modules.ipynb](file:///e:/repositories/python_gym/package_manager/common_packages_and_modules.ipynb) | Packages & Modules Foundations | Module vs package structure, `sys.path`, `importlib`, standard library essentials (`pathlib`, `json`, `collections`), third-party ecosystem, `__all__` |
-| [pip_and_requirements.ipynb](file:///e:/repositories/python_gym/package_manager/pip_and_requirements.ipynb) | Dependency Management with Pip | `pip install`, `pip freeze`, requirements.txt structure, SemVer operators (`==`, `>=`, `~=`), wheels (`.whl`) vs sdist, SHA-256 hash security, private registries, programmatic `importlib.metadata` |
-| [uv_fast_packaging.ipynb](file:///e:/repositories/python_gym/package_manager/uv_fast_packaging.ipynb) | Next-Gen Tooling with `uv` | Rust PubGrub resolver, `uv pip`, `uv venv`, `uv python`, `uv init`/`add`/`run`, PEP 723 single-file scripts, `uvx` ephemeral execution |
+# 📚 List all curriculum modules
+python gym.py list
+```
 
 ---
 
-### 🏗️ 6. Upcoming Modules (In Progress)
+## 🗺️ Pillar Overviews & Quick Links
 
-- **`package_manager/`**: `virtual_environments.ipynb`, `poetry_management.ipynb`.
-- **`fast_api/`**: Asynchronous web APIs, Pydantic data schemas, Uvicorn server integration, OpenAPI documentation.
+### 1. 📖 [Theory & Python Mastery (`theory/`)](file:///e:/repositories/python_gym/theory/README.md)
+Over 45+ interactive Jupyter notebooks covering:
+- **[Learn the Basics](file:///e:/repositories/python_gym/theory/learn_the_basics/README.md)**: Variables, slicing, generator expressions, list comprehensions, typing protocols, context managers.
+- **[Data Structures & Algorithms](file:///e:/repositories/python_gym/theory/data_structures_and_algorithms/README.md)**: Dynamic array resizing, custom HashMaps, Monotonic Stacks, Heaps, BSTs, and Recursion.
+- **[Concurrency](file:///e:/repositories/python_gym/theory/concurrency/README.md)**: GIL bypass, CPU-bound multiprocessing, I/O-bound asyncio event loops, ThreadPoolExecutors.
+- **[OOP](file:///e:/repositories/python_gym/theory/object_oriented_programming/README.md)**: Method binding protocols, C3 Linearization (MRO), Descriptors, and Abstract Base Classes.
+- **[Package Manager](file:///e:/repositories/python_gym/theory/package_manager/README.md)**: Modern dependency resolution with `uv` and `pip`.
+- **[FastAPI](file:///e:/repositories/python_gym/theory/fast_api/README.md)**: Asynchronous REST endpoints, Pydantic schemas, and Uvicorn.
+
+---
+
+### 2. 🧠 [Algorithmic Practice (`exercises/`)](file:///e:/repositories/python_gym/exercises/README.md)
+Canonical coding challenges categorized by transferable problem-solving patterns:
+- **[LeetCode Patterns](file:///e:/repositories/python_gym/exercises/leetcode/README.md)**: Arrays & Hashing, Two Pointers, Sliding Window, Stack, Binary Search, Linked Lists, Trees, Heaps, Backtracking, Dynamic Programming.
+- **[HackerRank Tracks](file:///e:/repositories/python_gym/exercises/hackerrank/README.md)**: Warmup, Strings, Sorting, Greedy Algorithms, Dictionaries & Hash Maps.
+- **[Data Structure Helpers](file:///e:/repositories/python_gym/exercises/utils/)**: Prebuilt `ListNode`, `TreeNode`, and tree deserializers for rapid testing.
+
+---
+
+### 3. 🧩 [Design Patterns Catalog (`design_patterns/`)](file:///e:/repositories/python_gym/design_patterns/README.md)
+Executable Python implementations of classic GoF patterns with unit tests:
+- **Creational**: Factory Method, Abstract Factory, Builder, Prototype, Singleton.
+- **Structural**: Adapter, Composite, Decorator, Facade, Proxy.
+- **Behavioral**: Chain of Responsibility, Command (Undo/Redo), Observer (Pub-Sub), State Machine, Strategy.
+
+---
+
+### 4. 📐 [System Design & Distributed Systems (`system_design/`)](file:///e:/repositories/python_gym/system_design/README.md)
+Everything needed to master System Design interviews:
+- **[01. Fundamentals](file:///e:/repositories/python_gym/system_design/01_fundamentals/README.md)**: CAP/PACELC theorems, Database sharding, Consistent Hashing, Caching strategies, Message queues, and Latency estimation cheat sheets.
+- **[02. Low-Level Design (LLD)](file:///e:/repositories/python_gym/system_design/02_low_level_design_lld/README.md)**: Runnable Python OOP code for LRU/LFU Caches, Multi-Tenant Rate Limiters, Multi-Level Parking Lots, Transactional Key-Value Stores with Rollback, and Pub-Sub Brokers.
+- **[03. High-Level Design (HLD)](file:///e:/repositories/python_gym/system_design/03_high_level_design_hld/README.md)**: Deep-dive production architectures for TinyURL, Distributed Rate Limiters, WhatsApp Chat, Twitter News Feed, YouTube Streaming, Uber Ride Matching, and Flash Sale Inventory Engines.
+- **[04. Interview Blueprint](file:///e:/repositories/python_gym/system_design/04_interview_framework/system_design_interview_guide.md)**: A structured 45-minute guide to ace the system design interview.
 
 ---
 
@@ -96,32 +103,14 @@ Welcome to **Python Gym**, a comprehensive repository of interactive Jupyter not
 
 ### Prerequisites
 - **Python 3.10+**
-- **Jupyter Notebook** / **JupyterLab** or **VS Code** with Python & Jupyter extensions.
+- **Jupyter Notebook / JupyterLab** or **VS Code / Antigravity IDE**
 
-### Installation & Launch
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/vinersar31/python_gym.git
-   cd python_gym
-   ```
-
-2. **Launch Jupyter Lab**:
-   ```bash
-   jupyter lab
-   ```
-   Or open any `.ipynb` file directly in VS Code / PyCharm / Antigravity IDE.
-
----
-
-## 🛠️ Best Practices Followed in Notebooks
-
-- **Runnable & Verified**: Every code cell is fully valid and runnable in Python 3.10+.
-- **Clean Output**: Uses clean, explicit print formatting without console encoding issues.
-- **Self-Contained**: Each notebook includes an intro, index, detailed explanations, executable code cells, quick reference cheat sheet, and summary table.
-- **Standard UTF-8**: All notebooks are saved in standard UTF-8 format.
+### Run Verification Tests
+```bash
+python gym.py test
+```
 
 ---
 
 ## 📄 License
-This repository is open-source and available under the [MIT License](LICENSE).
+This project is open-source under the [MIT License](LICENSE).
